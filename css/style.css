@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Share Tech Mono', monospace;
+    text-decoration: none;
+    list-style: none;
+}
+:root {
+    font-size: 62.5%;
+    --bg-color: #2F3C68;
+    --text-color: #fff;
+    --main-color: #2985fd;
+    --bt-border: #86b9fd;
+}
+
+#hero h1 {
+    font-size: x-large;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+.header-space {
+    height: 8.5rem; /* +/- Altura do header */
+    transition: all .50s ease;
+}
+
+.navbar.hidden {
+    display: none;
+}
+
+header.hidden {
+    top: -18.0rem; /* Mover o header para cima para esconder */
+    transition: top 0.2s ease;
+}
+
+.container {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 0.8rem 5%;
+    transition: all .50s ease;
+}
+
+
+footer {
+    display: flex;
+    margin: 0 5.0rem;
+    height: 10.0rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 20%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    margin: 0px 3.0rem;
+    transition: all .50s ease;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+.navbar a.bt-call:hover{
+    color: var(--bg-color);
+}
+
+.navbar a.active {
+    color: var(--main-color);
+
+}
+
+.navbar a.bt-call {
+    padding: 10px 40px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+#menu-icon{
+    cursor: pointer;
+    color: var(--main-color);
+    font-size: 3.5rem;
+    z-index: 10001;
+    display: none;
+}
+
+section {
+    padding: 0 1.0rem;
+}
+
+#hero {
+    position: relative;
+    min-height: 90vh;
+    margin: 0 5vw;
+    transition: all .5s;
+    padding: 30vh 1.0rem;
+}
+
+#hero p a{
+    background: var(--main-color);
+    color: var(--text-color);
+    margin: 0 8px 0 0;
+    -webkit-transition: padding 0.5s linear;
+    -moz-transition: padding 0.5s linear;
+    -ms-transition: padding 0.5s linear;
+    -o-transition: padding 0.5s linear;
+    transition: padding 0.5s linear;
+}
+
+#hero p a:hover{
+    padding: 0 30px 0 8px;
+}
+
+lottie-player {
+    width: auto;
+    max-width: 600px;
+}
+
+@media (max-width: 1280px) {
+    header {
+        padding:14px 2%;
+        transition: .30s;
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    #menu-icon{
+        display: block;
+    }
+
+    #hero {
+        width: 450px;
+    }
+
+    .header-space {
+        height: 85px;
+    }
+
+    .navbar{
+        position: absolute;
+        top:100%;
+        right: -100%;
+        padding: 0 1.5rem .8rem 1.5rem;
+        background: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: all .50s ease;
+    }
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+    .navbar a:hover{
+        transform: transLateX(10px);
+        color: var(--text-color);
+        opacity: 0.7;
+        
+    }
+    .navbar a.active{
+        color: var(--text-color);
+        opacity: 0.7;
+    }
+
+    .navbar.open{
+        right: 3%;
+    }
+
+    .navbar a.bt-call {
+        margin-top: 2%;
+        margin: 0;
+        padding: 0.5rem 4.0rem;
+        color: var(--text-color);
+        border-radius: 20px;
+        background-color: var(--bt-border);
+    }
+}
+
+@media (max-width: 500px) {
+    section {
+        width: 320px;
+    }
+
+}
