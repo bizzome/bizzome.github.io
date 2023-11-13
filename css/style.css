@@ -6,6 +6,7 @@
     text-decoration: none;
     list-style: none;
 }
+
 :root {
     font-size: 62.5%;
     --bg-color: #2F3C68;
@@ -158,6 +159,20 @@ section {
 lottie-player {
     width: auto;
     max-width: 600px;
+}
+
+.contact-info form{
+    padding: 2rem;
+}
+
+.contact-media {
+    padding: 15rem 2rem 0 2rem;
+    background-color: #324d84;
+}
+
+.ri-github-fill {
+    color: #fff;
+    font-size:5rem;
 }
 
 @media (max-width: 1280px) {
