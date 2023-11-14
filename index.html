@@ -33,7 +33,7 @@
     </header>
     <section id="hero">
         <h1>Hello!! This is @bizzome world...</h1>
-        <p>I am remaking this website while it is live.</p>
+        <p>I am remaking this world while it is live.</p>
         <p>
             <a href="#">Welcome</a>and feel free to explore.
         </p>
@@ -44,7 +44,10 @@
     <section id="about">
         <h1>About</h1>
         <p>
-            Programmer with a degree in Analysis and Systems Development, experienced in software engineering, web and mobile development, backend and frontend, task automation, web crawlers, data collection, and system architecture. Provides support for large-scale LawTech applications and embedded systems solutions for Agriculture. Extensive knowledge in Linux, Docker, Python, OO, TDD, Rest APIs, and Git. Proficient in HTML, CSS, and Javascript. Advanced technical English. Currently undertaking the CS50 course from the Harvard Institute, completing an MBA in Cybersecurity, and enrolled in the Full Cycle course.
+            Programmer with a degree in Analysis and Systems Development, experienced in software engineering, web and mobile development, fullstack, passionate about task automation, web crawlers, data collection, and system architecture. Provided support for large-scale LawTech applications and embedded systems solutions for brazillian Agriculture. Extensive knowledge in Linux, Docker, Python, OO, TDD, Rest APIs, and Git. Proficient in HTML, CSS, and Javascript. Advanced technical English.
+        </p>
+        <p>
+            I am currently taking <a class='link-course' target="_blank" href="https://www.edx.org/cs50">CS50 courses</a> from Harvard Institute, completing an <a class="link-course" target="_blank" href="https://www.xpeducacao.com.br/pos-graduacao/pos-seguranca-cibernetica">MBA in Cybersecurity</a>, and enrolled in a <a class="link-course" target="_blank" href="https://fullcycle.com.br/"> FullCycle course</a>.
         </p>
     </section>
     <section id="services">
@@ -54,20 +57,29 @@
     <section id="contact">
         <h1>Send me a message:</h1>
         <div class="contact-info">
-            <form action="" method="GET">
+            <form action="https://formspree.io/f/xknlajbj" method="POST">
                 <div>
                     <label for="name">Name: </label>
-                    <input type="text" id="txt_name" name="name" pattern="/\D+/" placeholder="Your name">
+                    <input type="text" id="txt-name" name="name" pattern="/\D+/" placeholder="Your name">
                 </div>
 
                 <div>
                     <label for="phone">Phone Number: </label>
-                    <input type="tel" id="txt_phone" name="phone" placeholder="Your phone number">
+                    <input type="tel" id="txt-phone" name="phone" placeholder="Your phone number (optional)">
                 </div>
 
                 <div>
                     <label for="email">Email: </label>
-                    <input type="email" id="txt_email" name="email" placeholder="Your email">
+                    <input type="email" id="txt-email" name="_replyto" placeholder="Your email">
+                </div>
+
+                <div>
+                    <label for="subject">Subject</label>
+                    <select name="subject" id="subject">
+                        <option values="job-offer">Job Offer</option>
+                        <option values="complaint">Complaint</option>
+                        <option values="new-idea">New Idea</option>
+                    </select>
                 </div>
 
                 <div>
