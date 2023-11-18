@@ -1,111 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    
-
-    <title>@Bizzome</title>
+    <title>CSS Types</title>
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
-    <div class="header-space"></div>
-    
-    <header>
-        <a href="#" class="logo">
-            <img src="assets/logo-bizzo-up.png" alt="">
-        </a>
+    <div class="bg">
 
-        <ul class="navbar">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <a href="https://www.linkedin.com/in/bizzo-developer/" target="_blank" class="bt-call">Get in touch</a>
-        </ul>
-        <div class="main" id="menu-icon">
-            <i class="ri-menu-line"></i>
-        </div>
+    </div>
+    <main>
+        <section class="about">
+            <h1>About</h1>
+            <p>
+                Programmer with a degree in Analysis and Systems Development, experienced in software engineering, web and mobile development, fullstack, passionate about task automation, web crawlers, data collection, and system architecture. Provided support for large-scale LawTech applications and embedded systems solutions for brazillian Agriculture. Extensive knowledge in Linux, Docker, Python, OO, TDD, Rest APIs, and Git. Proficient in HTML, CSS, and Javascript. Advanced technical English.
+            </p>
+            <p>
+                I am currently taking <a class='blue-link' target="_blank" href="https://www.edx.org/cs50">CS50 courses</a> from Harvard Institute, completing an <a class="blue-link" target="_blank" href="https://www.xpeducacao.com.br/pos-graduacao/pos-seguranca-cibernetica">MBA in Cybersecurity</a>, and enrolled in a <a class="blue-link" target="_blank" href="https://fullcycle.com.br/"> FullCycle course</a>.
+            </p>
+        </section>
 
-    </header>
-    <section id="hero">
-        <h1>Hello!! This is @bizzome world...</h1>
-        <p>I am remaking this world while it is live.</p>
-        <p>
-            <a href="#">Welcome</a>and feel free to explore.
-        </p>
-        <div class="herogif">
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/d550fc5b-b8e2-4330-829f-b8f667d98dfd/eYMjbkflai.json" background="##fff" speed="1" loop autoplay direction="1" mode="n"></lottie-player>
-        </div>
-    </section>
-    <section id="about">
-        <h1>About</h1>
-        <p>
-            Programmer with a degree in Analysis and Systems Development, experienced in software engineering, web and mobile development, fullstack, passionate about task automation, web crawlers, data collection, and system architecture. Provided support for large-scale LawTech applications and embedded systems solutions for brazillian Agriculture. Extensive knowledge in Linux, Docker, Python, OO, TDD, Rest APIs, and Git. Proficient in HTML, CSS, and Javascript. Advanced technical English.
-        </p>
-        <p>
-            I am currently taking <a class='blue-link' target="_blank" href="https://www.edx.org/cs50">CS50 courses</a> from Harvard Institute, completing an <a class="blue-link" target="_blank" href="https://www.xpeducacao.com.br/pos-graduacao/pos-seguranca-cibernetica">MBA in Cybersecurity</a>, and enrolled in a <a class="blue-link" target="_blank" href="https://fullcycle.com.br/"> FullCycle course</a>.
-        </p>
-    </section>
-    <section id="services">
+        <section class="container">
+            <div class="card">
+                <p>Service 1</p>
+            </div>
+            <div class="card">
+                <p>Service 2</p>
+            </div>
+            <div class="card">
+                <p>Service 3</p>
+            </div>
+            <div class="card">
+                <p>Service 4</p>
+            </div>
+        </section>
 
-    </section>
-
-    <section id="contact">
-        <h1>Send me a message:</h1>
-        <div class="contact-info">
-            <form action="https://formspree.io/f/xknlajbj" method="POST">
-                <div>
-                    <label for="name">Name: </label>
-                    <input type="text" id="txt-name" name="name"  placeholder="Your name">
-                </div>
-
-                <div>
-                    <label for="phone">Phone Number: </label>
-                    <input type="tel" id="txt-phone" name="phone" placeholder="Your phone number (optional)">
-                </div>
-
-                <div>
-                    <label for="email">Email: </label>
-                    <input type="email" id="txt-email" name="_replyto" placeholder="Your email">
-                </div>
-
-                <div>
-                    <label for="subject">Subject</label>
-                    <select name="subject" id="subject">
-                        <option values="" disabled selected>Select some subject option...</option>
-                        <option values="job-offer">Job Offer</option>
-                        <option values="complaint">Complaint</option>
-                        <option values="new-idea">New Idea</option>
-                        <option values="compliment">Compliment</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="message">Message: </label>
-                    <textarea name="message" id="txt_message" cols="30" rows="10"></textarea>
-                </div>
-
-                <div>
-                    <input type="submit" id="btnsubmit" value="Send message">
-                </div>
-
-            </form>
-
+        <section class="contato">
             
-        </div>
-        <div class="contact-media">
-            <a href="https://github.com/bizzome" target="_blank"><i class="ri-github-fill"></i></a>
-            <p>Follow me on Github</p>
-        </div>
-    </section>
-    <footer>
-        <p>Developed by @bizzome &copy;2023 | All Rights Reserved</p>
-    </footer>
-    
-    <script type="text/javascript" src="js/script.js"></script>
+        </section>
+        
+    </main>
+   
+
+
 </body>
 </html>
