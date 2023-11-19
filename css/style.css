@@ -131,15 +131,30 @@ footer {
 }
 
 section {
-    padding: 0 1.0rem;
+    margin: 0 1.0rem;
 }
 
 #hero {
+    display: inline-grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-areas: 
+    ". . . ."
+    ". . gif ."
+    ". text gif ."
+    ". . . .";
     position: relative;
-    min-height: 90vh;
-    margin: 0 5vw;
+    margin: 10vh 5vw;
     transition: all .5s;
-    padding: 30vh 1.0rem;
+}
+
+#calling {
+    width: fit-content;
+    height: fit-content;
+    grid-area: text;
+}
+.herogif{
+    width: fit-content;
+    grid-area: gif;
 }
 
 #hero p a{
