@@ -17,7 +17,7 @@
 }
 
 h1 {
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 body {
@@ -117,11 +117,6 @@ footer {
     border-radius: 20px;
 }
 
-.main {
-    display: flex;
-    align-items: center;
-}
-
 #menu-icon{
     cursor: pointer;
     color: var(--main-color);
@@ -130,15 +125,10 @@ footer {
     display: none;
 }
 
-section {
-    margin: 0 1.0rem;
-}
-
 #hero {
     display: inline-grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-areas: 
-    ". . . ."
     ". . gif ."
     ". text gif ."
     ". . . .";
@@ -176,6 +166,13 @@ lottie-player {
     width: auto;
     max-width: 600px;
 }
+
+#about {
+    padding: 40px 14%;
+    background-color: #324d84;
+}
+
+
 
 .contact-info form{
     padding: 2rem;
