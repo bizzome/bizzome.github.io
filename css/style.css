@@ -130,10 +130,9 @@ footer {
 #hero {
     display: inline-grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-areas: 
-    ". . gif ."
-    ". text gif ."
-    ". . . .";
+    grid-template-areas:". . gif ."
+                        ". text gif ."
+                        ". . . .";
     position: relative;
     margin: 10vh 5vw;
     transition: all .5s;
