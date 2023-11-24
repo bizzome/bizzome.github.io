@@ -166,8 +166,13 @@ lottie-player {
 }
 
 #about {
+    text-align: justify;
     padding: 40px 14%;
     background-color: #324d84;
+}
+
+#about * p {
+    margin-top:.8rem;
 }
 
 
