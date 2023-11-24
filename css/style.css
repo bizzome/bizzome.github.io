@@ -214,8 +214,8 @@ lottie-player {
     width: 100%;
 }
 
-input:focus, textarea:focus {
-    border: 5px solid lightblue;
+input:focus, #txt_message:focus {
+    border: 2px solid lightblue;
 }
 
 #btnsubmit {
