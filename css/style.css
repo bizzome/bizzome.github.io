@@ -9,6 +9,11 @@
     margin: 0;
 }
 
+html {
+    transition: scroll 0.5;
+    scroll-behavior: smooth;
+}
+
 :root {
     font-size: 62.5%;
     --bg-color: #2F3C68;
@@ -65,15 +70,7 @@ header {
     background: var(--bg-color);
     padding: 0.8rem 5%;
     transition: all .50s ease;
-}
-
-
-footer {
-    display: flex;
-    margin: 0 5.0rem;
-    height: 10.0rem;
-    align-items: center;
-    justify-content: center;
+    width:100%;
 }
 
 .logo {
@@ -100,11 +97,11 @@ footer {
     transition: all .50s ease;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     color: var(--main-color);
 }
 
-.navbar a.bt-call:hover{
+.navbar a.bt-call:hover {
     color: var(--bg-color);
 }
 
@@ -119,7 +116,7 @@ footer {
     border-radius: 20px;
 }
 
-#menu-icon{
+#menu-icon {
     cursor: pointer;
     color: var(--main-color);
     font-size: 3.5rem;
@@ -143,12 +140,12 @@ footer {
     height: fit-content;
     grid-area: text;
 }
-.herogif{
+.herogif {
     width: fit-content;
     grid-area: gif;
 }
 
-#hero p a{
+#hero p a {
     background: var(--main-color);
     color: var(--text-color);
     margin: 0 8px 0 0;
@@ -159,7 +156,7 @@ footer {
     transition: padding 0.5s linear;
 }
 
-#hero p a:hover{
+#hero p a:hover {
     padding: 0 30px 0 8px;
 }
 
@@ -174,16 +171,6 @@ lottie-player {
 }
 
 
-
-.contact-info form{
-    padding: 2rem;
-}
-
-.contact-media {
-    padding: 15rem 2rem 0 2rem;
-    background-color: #324d84;
-}
-
 .ri-github-fill {
     color: #fff;
     font-size:5rem;
@@ -193,12 +180,79 @@ lottie-player {
     color: var(--link);
 }
 
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-top: 5rem;
+}
+
+.contact-info {
+    
+    margin: 5rem 0 10rem 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-info > * > input, select{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    outline: none;
+}
+
+.contact-info > div:nth-child(5) > textarea {
+    width: 100%;
+}
+
+input:focus, textarea:focus {
+    border: 5px solid lightblue;
+}
+
+#btnsubmit {
+    color:#fff;
+    font-size: 1.9rem;
+    height: 50px;
+    margin-top: 10%;
+    border-radius: 23px;
+    border: 2px solid #9cc6fe;
+    background-color: #324d84;
+    transition: all 0.8s;
+}
+
+#btnsubmit:hover {
+    color: var(--bg-color);
+    font-size: 2rem;
+    background-color: #fff;
+    border: 2px solid #0d75fd;
+}
+
+footer {
+    height: 10rem;
+}
+
+.contact-media {
+    display: flex;
+    width: 100%;
+    padding: 15rem 2rem 2rem 2rem;
+    background-color: #324d84;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
 @media (max-width: 1280px) {
     header {
         padding:14px 2%;
         transition: .30s;
     }
-    .navbar a{
+    .navbar a {
         padding: 5px 0;
         margin: 0px 20px;
     }
@@ -206,7 +260,7 @@ lottie-player {
 
 
 @media (max-width: 900px) {
-    #menu-icon{
+    #menu-icon {
         display: block;
     }
 
@@ -218,7 +272,7 @@ lottie-player {
         height: 85px;
     }
 
-    .navbar{
+    .navbar {
         position: absolute;
         top:100%;
         right: -100%;
@@ -229,24 +283,24 @@ lottie-player {
         justify-content: flex-start;
         transition: all .50s ease;
     }
-    .navbar a{
+    .navbar a {
         display: block;
         margin: 12px 0;
         padding: 0px 25px;
         transition: all .50s ease;
     }
-    .navbar a:hover{
+    .navbar a:hover {
         transform: transLateX(10px);
         color: var(--text-color);
         opacity: 0.7;
         
     }
-    .navbar a.active{
+    .navbar a.active {
         color: var(--text-color);
         opacity: 0.7;
     }
 
-    .navbar.open{
+    .navbar.open {
         right: 3%;
     }
 
@@ -261,8 +315,21 @@ lottie-player {
 }
 
 @media (max-width: 500px) {
-    section {
-        width: 320px;
+
+    #hero {
+        grid-template-columns: 1fr;
+        grid-template-areas:"gif"
+                            "text"
+                            ".";
+    }
+}
+
+@media (max-width: 376px) {
+    h1 {
+        font-size: x-large;
     }
 
+    lottie-player {
+        max-width: 355px;
+    }
 }

@@ -60,9 +60,10 @@
     </section>
 
     <section id="contact">
+        
         <h1>Send me a message:</h1>
-        <div class="contact-info">
-            <form action="https://formspree.io/f/xknlajbj" method="POST">
+        <div>
+            <form class="contact-info" action="https://formspree.io/f/xknlajbj" method="POST">
                 <div>
                     <label for="name">Name: </label>
                     <input type="text" id="txt-name" name="name"  placeholder="Your name">
@@ -70,7 +71,7 @@
 
                 <div>
                     <label for="phone">Phone Number: </label>
-                    <input type="tel" id="txt-phone" name="phone" placeholder="Your phone number (optional)">
+                    <input type="tel" id="txt-phone" name="phone" placeholder="Contact number (optional)">
                 </div>
 
                 <div>
@@ -79,7 +80,7 @@
                 </div>
 
                 <div>
-                    <label for="subject">Subject</label>
+                    <label for="subject">Subject:</label>
                     <select name="subject" id="subject">
                         <option values="" disabled selected>Select some subject option...</option>
                         <option values="job-offer">Job Offer</option>
@@ -95,20 +96,17 @@
                 </div>
 
                 <div>
-                    <input type="submit" id="btnsubmit" value="Send message">
+                    <input id="btnsubmit" type="submit" value="Send message">
                 </div>
-
             </form>
-
-            
-        </div>
-        <div class="contact-media">
-            <a href="https://github.com/bizzome" target="_blank"><i class="ri-github-fill"></i></a>
-            <p>Follow me on Github</p>
         </div>
     </section>
     <footer>
-        <p>Developed by @bizzome &copy;2023 | All Rights Reserved</p>
+        <div class="contact-media">
+            <a href="https://github.com/bizzome" target="_blank"><i class="ri-github-fill"></i></a>
+            <p>Follow me on Github</p>
+            <p>bizzome &copy;2023 | All Rights Reserved</p>
+        </div>
     </footer>
     
     <script type="text/javascript" src="js/script.js"></script>
